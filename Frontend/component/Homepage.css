@@ -1,0 +1,173 @@
+/* General Reset */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Homebody Styling */
+.homebody {
+    background-color: #ddd;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ensure it takes the full viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    text-align: center;
+}
+
+/* Scroll Container Styling */
+.scroll-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* Hbox1 Styling with Three Items per Row */
+.hbox1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three items per row */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the grid */
+}
+
+/* Card Styling */
+.card {
+    background-color: #ffffff;
+    padding: 10px; /* Reduced padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    height: 200px; /* Set a fixed height for the cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+/* Alternating Background Color */
+.hbox1 > .card:nth-child(odd) {
+    background-color: #f9f9f9; /* Light background color for odd items */
+}
+
+.hbox1 > .card:nth-child(even) {
+    background-color: #ffffff; /* White background color for even items */
+}
+
+/* Header Navigation Styling */
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0 1rem;
+}
+
+.logo {
+    width: 100px;
+    height: 72px;
+}
+
+.brand-name {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item .nav-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Aligns text and icons vertically */
+}
+
+.cart-icon-button {
+    color: white;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+.homecontainer {
+    background-color: #f0f0f0;
+    height: 60vh;
+    width: 100%;
+}
+
+/* Chatbot Styling */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.chatbot-header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.chatbot-body {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.chatbot-messages {
+    height: 150px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.chatbot-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.chatbot-container.open {
+    height: 250px;
+}

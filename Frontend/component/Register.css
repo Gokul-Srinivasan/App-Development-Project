@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: medium;
+}
+
+.bodyr {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bodyr::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://i.pinimg.com/originals/e2/95/af/e295af1c140a550407f54b0f7f4fc66e.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(8px); /* Apply blur effect */
+    -webkit-filter: blur(8px); /* For Safari */
+    z-index: -1; /* Place the pseudo-element behind the content */
+}
+
+.container {
+    position: relative;
+    z-index: 1; /* Ensure the container is above the pseudo-element */
+    margin: 0 auto;
+}
+
+.boxsection {
+    background-color: white;
+    gap: 10px;
+    display: grid;
+    place-items: center;
+    border: solid;
+    border-color: aliceblue;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 2rem 4rem;
+}
+
+.box1 {
+    font-size: large;
+    text-align: center;
+}
+
+.but {
+    width: 80px;
+    height: 50px;
+}
+
+.rec {
+    color: black;
+}

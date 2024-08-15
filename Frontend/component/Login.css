@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-size: medium;
+    
+    
+}
+.bodyl {
+    position: relative;
+    height: 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden; /* Ensure the pseudo-element doesn't overflow the parent */
+}
+
+.bodyl::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-AnZexY8EYqXZhYp0UXPp5E7rxVNgzlgKlfHVoRrFC7lwxcRKCHyhyGkRlwNWZuX3qak&usqp=CAU");
+    background-size: cover;
+    filter: blur(8px); /* Apply blur to the pseudo-element */
+    z-index: -1; /* Ensure the pseudo-element stays behind other content */
+}
+
+.bodybox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    
+    
+}
+.dom
+{
+    display: grid;
+    place-items: center;
+    
+    background-color: white;
+   padding: 1rem ;
+    border:solid;
+    font-size: larger;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: white;
+    color: deepskyblue;
+
+
+    
+}
+.box1
+{
+    text-align: center;
+    
+}
+h1{
+    
+    color: deepskyblue;
+    text-align: center;
+}
+
+input{
+    background-color: rgb(6, 136, 249);
+    padding: 1rem;
+    color: white;
+    font-size: large;
+    border-radius: 20px;
+    border: 0cap;
+    
+    
+}
+label{
+    
+    color: deepskyblue;
+    
+}
+button{
+    margin-left: 30px;
+    width: 40%;
+    height: 10%;
+    font-size: large;
+    border-radius: 10px;
+}
+
+span
+{
+    color: black;
+    
+}
+.textfield
+{
+    color: black !important;
+    
+    border:"1px solid white";
+}
+h4{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    
+
+}
+h4::before,
+h4::after{
+    content:"";
+    flex:1 1;
+    border-bottom: 2px solid #000;
+    margin: auto;
+
+}
+.rel{
+  width: 80px;
+  height: 40px;
+}
+.f1
+{
+    display: grid;
+    place-items: center;
+    justify-content: sp;
+}
+.bpage
+{
+    display: grid;
+    place-items: center;
+    padding: 1%;
+    margin: auto;
+   
+}
+.tex{
+    font-size: xx-large;
+}
+.ppage
+{
+
+    display: grid;
+    place-items: center;
+    padding: 1%;
+    margin: auto;
+}

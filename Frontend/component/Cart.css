@@ -1,0 +1,58 @@
+.cart-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-image: url('https://c0.wallpaperflare.com/preview/910/104/863/shopping-keyboard-enter-button.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.cart-details {
+  width: 60%;
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.9); 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.item-name {
+  font-weight: bold;
+}
+
+.remove-button {
+  transition: transform 0.2s ease;
+}
+
+.remove-button:hover {
+  transform: scale(1.1);
+  color: #f44336;
+}
+
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.total-amount {
+  font-weight: bold;
+}
+
+.checkout-button {
+  background: linear-gradient(135deg, #ff4081, #ff80ab);
+  border-radius: 50px;
+  padding: 10px 30px;
+}
+
+.checkout-button:hover {
+  background: linear-gradient(135deg, #ff80ab, #ff4081);
+}
+
+@media (max-width: 768px) {
+  .cart-details {
+    width: 90%;
+  }
+}

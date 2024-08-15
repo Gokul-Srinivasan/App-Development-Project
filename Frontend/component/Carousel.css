@@ -1,0 +1,135 @@
+/* Carousel.css */
+
+.carousel-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px; /* Increased padding for a spacious feel */
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px; /* Soft rounded corners for the carousel */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Deep shadow for a floating effect */
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0); /* Soft gradient background */
+}
+
+.slide {
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(0.7) blur(2px); /* Slight blur and darkening for emphasis */
+    transition: filter 0.5s ease-in-out;
+}
+
+.slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1); /* Very light transparent background */
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 80%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Enhanced shadow for depth */
+    backdrop-filter: blur(10px); /* Blurring the background behind the text */
+    transition: background 0.4s ease, transform 0.4s ease; /* Smooth transition */
+}
+
+.slide-text h2 {
+    margin: 0;
+    font-size: 32px; /* Increased font size for headlines */
+    font-weight: bold;
+    line-height: 1.4;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.7); /* Stronger text shadow */
+    font-family: 'Montserrat', sans-serif; /* Modern, elegant font */
+}
+
+.slide-text p {
+    margin: 15px 0 0;
+    font-size: 20px; /* Larger font size for descriptions */
+    line-height: 1.6;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.7); /* Stronger text shadow */
+}
+
+.slide:hover .slide-text {
+    background: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+    transform: translate(-50%, -50%) scale(1.1); /* More pronounced zoom effect */
+}
+
+.slick-dots {
+    bottom: 25px; /* Slightly lower the dots */
+}
+
+.slick-dots li {
+    margin: 0 8px; /* Increased spacing between dots */
+}
+
+.slick-dots li button:before {
+    font-size: 16px; /* Larger size for dot indicators */
+    color: #fff; /* White dots */
+}
+
+.slick-dots li.slick-active button:before {
+    color: #ff4081; /* Bright pink for active dot */
+}
+
+.slick-prev,
+.slick-next {
+    width: 50px; /* Larger navigation buttons */
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker background */
+    border-radius: 50%;
+    color: #fff;
+    font-size: 28px; /* Larger font size for arrows */
+    line-height: 50px;
+    text-align: center;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.4s, background-color 0.4s;
+}
+
+.slick-prev {
+    left: 15px;
+}
+
+.slick-next {
+    right: 15px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.9); /* Darker on hover */
+}
+
+.slick-prev:before {
+    content: '‹';
+}
+
+.slick-next:before {
+    content: '›';
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-container {
+        max-width: 100%; /* Full width on mobile */
+        padding: 15px; /* Reduced padding */
+    }
+    
+    .slide-text h2 {
+        font-size: 26px; /* Adjusted font size */
+    }
+    
+    .slide-text p {
+        font-size: 18px; /* Adjusted font size */
+    }
+}

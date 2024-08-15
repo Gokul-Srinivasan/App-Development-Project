@@ -1,0 +1,47 @@
+.description-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.title {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.paper-container {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.section-content {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.accordion {
+    margin-bottom: 15px;
+}
+
+.accordion-title {
+    color: #333;
+}
+
+.accordion-content {
+    color: #555;
+}
+
+.features-section {
+    padding: 20px 0;
+}
+
+.feature-card {
+    border-radius: 15px;
+    overflow: hidden;
+}
